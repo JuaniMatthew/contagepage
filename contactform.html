@@ -11,13 +11,15 @@
     
     <body>
         <h1>My first contact form</h1>
-        <form onsubmit="return false"></form>
-        <input type="text" placeholder="Enter your last name" id="lastName" />
-        <br><br>
+        <!-- <form onsubmit="return false"></form> -->
         <input type="text" placeholder="Enter your first name" id="firstName" />
+        <br><br>
+        <input type="text" placeholder="Enter your last name" id="lastName" />
         <br><br>
         <input type="radio" id="male" name="gender" value="male"> Male
         <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="non binary" name="gender" value="non binary"> Non Binary
+        <input type="radio" id="non binary" name="gender" value="decline"> Decline To Say
         <br><br>
         <input type="email" placeholder="Enter your email" id="email" />
         <br><br>
@@ -31,7 +33,20 @@
             <option value="Neverland">Neverland</option>
             <option value="Vulcan">Vulcan</option>
             <option value="The Upside Down">The Upside Down</option>
+            <option value="Deep Down In My Purse">Deep Down In My Purse</option>
         </select>
+        <br><br><br>
+        <input type="password" placeholder="Enter password" id="password" /> 
+        &nbsp;&nbsp;&nbsp;<br><br>
+        <input type="password" placeholder="Enter password (check)" id="passwordCheck" />
+        <br><br>
+        <span>What is your question?</span>
+        <br><br>
+        <textarea id="question" rows="4"></textarea>
+        <br>
+        <input type="checkbox" id="newsletter" />Send me monthly newsletter
+        <br><br><br>
+        <button onclick="sendContact();">Send contact</button>
         <br><br>
     </body>
 </html>
