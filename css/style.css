@@ -5,6 +5,15 @@ html{
 }
 
 body {
-    text-align: right;
+    text-align: center;
     color: #3cf7fd;
 }
+.main-header img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin:auto;
+    display:block
+}
+
